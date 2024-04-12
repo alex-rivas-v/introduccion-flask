@@ -1,0 +1,28 @@
+# Archivos de configuración
+*.pyc
+__pycache__/
+instance/
+.pytest_cache/
+.env
+
+# Archivos de sistema
+.DS_Store
+
+# Logs y archivos temporales
+*.log
+*.swp
+*.bak
+
+# Entornos virtuales
+venv/
+env/
+
+# Dependencias
+/.venv
+/.env
+
+# Otros
+db.sqlite
+/.vscode
+/.idea
+# End Generation Here

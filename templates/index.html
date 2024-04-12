@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Flask</title>
+</head>
+<body>
+    <h1>{{ data.titulo }}</h1>
+
+    <p>Nombre: {{ data.nombre }}</p>
+
+    {% if data.edad > 18 %}
+        <p>Es mayor de edad</p>
+    {% else %}
+        <p>Es menor de edad</p>
+    {% endif %}
+
+    <ul>
+        {% for hobby in data.hobbies %}
+            <li>{{ hobby }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
